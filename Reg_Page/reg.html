@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="HTML Final Work" />
+    <meta name="keywords" content="HTML, CodeAcademy, ToDo" />
+    <meta name="author" content="Tomas Bingelis" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register: Lots To Do</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <!-- Application Headline -->
+    <div class="headline">
+        <h1>LOTS YOU HAVE TO DO</h1>
+        <h2>Please enter your information</h2>
+    </div>
+
+    <br/>
+
+    <form>
+        <div class="info">
+            <label for="firstname">First name: </label>
+            <input type="text" id="firstname" minlength="1" maxlength="50"/> <br/>
+
+            <label for="lastname">Last name: </label>
+            <input type="text" id="lastname" minlength="1" maxlength="50"/> <br/>
+
+            <label for="email">Email: </label>
+            <input type="email" id="email" minlength="4" maxlength="320"/> <br/>
+        </div>
+
+        <div class="presser"> <br/>
+            <button id="submit" type="button">SUBMIT</button> 
+            <button id="goback" type="button">GO BACK</button>
+        </div>
+    </form>
+    
+    <script src="r_script.js"></script>
+</body>
+</html>

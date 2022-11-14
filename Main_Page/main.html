@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="HTML Final Work" />
+    <meta name="keywords" content="HTML, CodeAcademy, ToDo" />
+    <meta name="author" content="Tomas Bingelis" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lots To Do</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body onload="mainLoad()">
+
+    <!-- Application Headline -->
+    <div class="headline">
+        <h1>LOTS YOU HAVE TO DO</h1>
+        <h2 id="hh"></h2>
+    </div>
+
+    <br/>
+
+    <form>
+        <div class="info" id="inputinfo" style="display: none;">
+            <label for="type">Task Type: </label>
+            <input type="text" id="ttype" minlength="1" maxlength="50"/> <br/>
+
+            <label for="content">Task Name: </label>
+            <input type="text" id="tcontent" minlength="1" maxlength="100"/> <br/>
+
+            <label for="date">Due Date: </label>
+            <input type="datetime" id="tdate" min="2000-01-01" max="4000-01-01, 00:00"/> <br/>
+        </div>
+
+        <div class="presser"> <br/>
+            <div id="default" style="display: block;">
+                <button id="addnew" type="button">ADD NEW</button>
+                <button id="logout" type="button">LOGOUT</button>
+            </div>
+            <div id="btninfo" style="display: none;">
+                <button id="submit" type="button">SUBMIT</button>
+                <button id="goback" type="button">GO BACK</button>
+            </div>
+        </div>
+    </form>
+    
+    <script src="m_script.js"></script>
+</body>
+</html>
