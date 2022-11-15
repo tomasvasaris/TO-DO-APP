@@ -21,29 +21,31 @@
 
     <br/>
 
-    <form>
-        <div class="info" id="inputinfo" style="display: none;">
-            <label for="type">Task Type: </label>
-            <input type="text" id="ttype" minlength="1" maxlength="50"/> <br/>
+    <div id="alltasks" style="display: block;">
+        
+    </div>
 
-            <label for="content">Task Name: </label>
-            <input type="text" id="tcontent" minlength="1" maxlength="100"/> <br/>
+    <div class="info" id="inputinfo" style="display: none;">
+        <label for="type">Task Type: </label>
+        <input type="text" id="ttype" minlength="1" maxlength="50"/> <br/>
 
-            <label for="date">Due Date: </label>
-            <input type="datetime" id="tdate" min="2000-01-01" max="4000-01-01, 00:00"/> <br/>
+        <label for="content">Task Name: </label>
+        <input type="text" id="tcontent" minlength="1" maxlength="100"/> <br/>
+
+        <label for="date">Due Date: </label>
+        <input type="datetime" id="tdate" min="2000-01-01" max="3000-01-01"/> <br/>
+    </div>
+
+    <div class="presser"> <br/>
+        <div id="default" style="display: block;">
+            <button id="addnew" type="button">ADD NEW</button>
+            <button id="logout" type="button">LOGOUT</button>
         </div>
-
-        <div class="presser"> <br/>
-            <div id="default" style="display: block;">
-                <button id="addnew" type="button">ADD NEW</button>
-                <button id="logout" type="button">LOGOUT</button>
-            </div>
-            <div id="btninfo" style="display: none;">
-                <button id="submit" type="button">SUBMIT</button>
-                <button id="goback" type="button">GO BACK</button>
-            </div>
+        <div id="btninfo" style="display: none;">
+            <button id="submit" type="button">SUBMIT</button>
+            <button id="goback" type="button">GO BACK</button>
         </div>
-    </form>
+    </div>
     
     <script src="m_script.js"></script>
 </body>

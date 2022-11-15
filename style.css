@@ -40,6 +40,16 @@ button {
     width: 100px;
 }
 
+button.delete {
+    background-color: rgb(236, 239, 245);
+    border: none;
+    color: rgb(102, 106, 129);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 30px;
+}
+
 div.info {
     font-size: 17px;
 }
@@ -55,5 +65,21 @@ label {
 
 input {
     position: fixed;
+    right: 15%;
+}
+
+span {
+    margin: 15px;
+}
+
+span.lspan {
+    text-align: left;
+}
+
+span.mspan {
+    left: 35%;
+}
+
+span.rspan {
     right: 15%;
 }

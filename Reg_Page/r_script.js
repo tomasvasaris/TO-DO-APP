@@ -2,7 +2,8 @@ submit.addEventListener('click', () => {
     let firstname = document.getElementById("firstname").value;
     let lastname  = document.getElementById("lastname").value;
     let email  = document.getElementById("email").value;
-    let user = {firstName: firstname, lastName: lastname, eMail: email};
+    let newarr = [];
+    let user = {firstName: firstname, lastName: lastname, eMail: email, tasks: newarr};
     let lenght = localStorage.length;
 
     if(firstname === "" || lastname === "" || email === "") {
@@ -25,6 +26,7 @@ submit.addEventListener('click', () => {
         } else {
             localStorage.setItem(lenght+1, JSON.stringify(user));
             sessionStorage.setItem('activeUser', JSON.stringify(user));
+            sessionStorage.setItem('activeUserID', lenght+1);
             window.location.href = '../Main_Page/main.html'
         }
     }

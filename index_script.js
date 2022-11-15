@@ -16,6 +16,7 @@ login.addEventListener('click', () => {
             if(userx.firstName === firstname && userx.lastName === lastname) {
                 exists = true;
                 sessionStorage.setItem('activeUser', JSON.stringify(userx));
+                sessionStorage.setItem('activeUserID', lenght+1);
             }
         }
 
